@@ -1,0 +1,18 @@
+config {
+  type: "table",
+  schema: "staging",
+  description: "Cleaned version of stackoverflow.badges with transformations applied (e.g., data type conversions, null handling).", 
+  columns: {
+    badge_id: "Unique identifier for the badge awarded.", 
+    badge_name: "Name of the badge earned by the user.",
+    award_timestamp: "Timestamp indicating when the badge was awarded.",
+    user_id: "Identifier of the user who received the badge.",
+  }
+}
+select
+  id as badge_id,
+  name as badge_name,
+  date as award_timestamp,
+  user_id
+from
+  ${ref("badges")}
