@@ -1,6 +1,7 @@
 config {
   type: "view",
   schema: "staging",
+   tags: ["daily"],
   description: "Cleaned version of stackoverflow.posts_questions"
 }
 

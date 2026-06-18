@@ -1,6 +1,7 @@
 config {
     type: "table",
     schema :"staging",
+    tags: ["daily"],
     description: "Cleaned version of stackoverflow.users table"
 }
 

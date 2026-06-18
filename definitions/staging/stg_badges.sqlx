@@ -1,6 +1,7 @@
 config {
   type: "table",
   schema: "staging",
+   tags: ["daily"],
   description: "Cleaned version of stackoverflow.badges with transformations applied (e.g., data type conversions, null handling).", 
   columns: {
     badge_id: "Unique identifier for the badge awarded.", 
