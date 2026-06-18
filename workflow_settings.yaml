@@ -1,0 +1,4 @@
+defaultProject: andresousa-upskilling
+defaultDataset: demo_broxel
+defaultAssertionDataset: dataform_broxel_assertions
+dataformCoreVersion: 3.0.52
